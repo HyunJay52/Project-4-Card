@@ -7,7 +7,7 @@
 
 ### 개발환경 & 사용기술
   Skills | Java, Javascript, Jquery, HTML, CSS, Mustache, JPA|
- ----- | -----  |
+ :-----: | :-----  |
  Framework | Springboot with Gradle|
   DBMS | SQL, Mysql |
   OS | Window, Mac OS |
@@ -18,7 +18,7 @@
 
  분류 | 기능 | 설명 |
 ---|---|:---|
-|회원가입| |
+Member|회원가입| |
 
 
 
