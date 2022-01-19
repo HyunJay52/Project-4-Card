@@ -1,4 +1,4 @@
-package com.phoca.boot.service.posts;
+package com.phoca.boot.service;
 
 public class PostsService {
 }
