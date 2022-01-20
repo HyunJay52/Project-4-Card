@@ -5,6 +5,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!--header.css 추가-->
+    <link rel="stylesheet" href="/css/header.css">
 </head>
 <body>
 <div class="main container-fluid">
@@ -14,13 +16,13 @@
             <!--로고, 검색, 로그인, 회원가입, 고객센터, 찜하기-->
             <div>
                 <!--로고-->
-                <div>
+                <div class="" id="logo">
                     <h2>Logo</h2>
-                    <h2>Comments</h2>
+                    <h6>Comments</h6>
                 </div>
                <!--검색-->
                 <div>
-                    <div>
+                    <div id="searchWrap">
                         <form>
                             <div>
                                 <input type="text" spellcheck="false" autocomplete="off" placeholder="검색어를 입력해 보세요." value>
@@ -31,7 +33,7 @@
 
                 </div>
                 <!--왼쪽 상단 (로그인, 회원가입, 고객센터, 찜하기)-->
-                <ul>
+                <ul class="side_ul">
                     <li>
                         <a>로그인</a>
                     </li>
@@ -50,7 +52,7 @@
             <!--메뉴-->
             <div>
                 <div>
-                    <ul id="seller_cs_menu">
+                    <ul id="seller_cs_menu" class="menu_ul">
                         <li><a type="button" href="<%=request.getContextPath()%>/">HOME</a></li>
                         <li><a type="button" href="">MARKET</a></li>
                         <li><a type="button" href="ask_admin_list">GROUP/SINGER</a></li>
