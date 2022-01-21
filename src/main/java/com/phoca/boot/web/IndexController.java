@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class IndexController {
     private final PostsService postsService;
 
+    //전체적인 수정이 필요함
     @GetMapping("/")
     public String index(Model model) { // Model: save object
         model.addAttribute("posts", postsService.findAllDesc());
@@ -35,4 +36,7 @@ public class IndexController {
 
     @GetMapping("/member/login")
     public String login() { return "/guest/member/login"; }
+
+    @GetMapping("/market/market_list")
+    public String market() { return "/admin/board/market_list"; }
 }
