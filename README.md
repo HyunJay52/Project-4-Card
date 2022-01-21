@@ -11,7 +11,7 @@
  Framework | Springboot with Gradle|
   DBMS | SQL, Mysql |
   OS | Window, Mac OS |
-  Etc. | Git, Github, Notion |
+  Etc. | Git, Github, Swagger |
  IDE | InteliJ | 
 
 ### 기능
