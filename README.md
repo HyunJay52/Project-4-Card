@@ -11,14 +11,18 @@
  Framework | Springboot with Gradle|
   DBMS | SQL, Mysql |
   OS | Window, Mac OS |
-  Etc. | Git, Github, Swagger |
+  Etc. | Git, Github, Swagger2 |
  IDE | InteliJ | 
 
 ### 기능
 
  분류 | 기능 | 설명 |
 ---|---|:---|
+Main|| |
+Board || |
 Member|회원가입| |
+Mypage || |
+Admin | | |
 
 
 
