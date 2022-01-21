@@ -1,4 +1,4 @@
-package com.phoca.boot.service.guest;
+package com.phoca.boot.web.controller.guest;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
