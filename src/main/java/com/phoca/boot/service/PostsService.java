@@ -33,6 +33,15 @@ public class PostsService {
         return id;
     }
 
+    @Transactional
+    public void delete(Long id) {
+        Posts posts = postsRepository.findById(id).orElseThrow(() ->
+            new IllegalArgumentException("해당 게시글이 없습니다. id="+id)
+        );
+        postsRepository.delete(posts);
+                        //JpaRepository에서 이미 지원하고 있는 delete 메소드, 엔티티 파라미터로 삭제 할 수 있고 deleteById 메소드 이용하면 id 삭제
+    }
+
     @Transactional(readOnly=true)
     public PostsResponseDto findById(Long id) {
         Posts entity = postsRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("해당 게시글이 없습니다 id="+id));
