@@ -1,9 +1,10 @@
 .menu_ul{background-color:yellow;}
 .side_ul{background-color:blue}
 #logo{background-color:gray;}
-#searchWrap{float: left;};
+#searchWrap{float: left; text-align:center;};
 .menu_ul, .side_ul{list-style: none;}
 .menu_ul li>a{ font-color:black;}
+.side_ul{font-size:0.7; }
 header>ul{
     list-style: none;
 	display: flex;
