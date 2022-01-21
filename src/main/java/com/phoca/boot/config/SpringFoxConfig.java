@@ -20,7 +20,7 @@ public class SpringFoxConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
                 .apis(RequestHandlerSelectors.any()) //RequestHandler를 선택하기 위한 설정을 돕는다
-                .paths(PathSelectors.ant("api/**")) // RequestMapping으로 할당된 모든 URL 리스트를 추출해서 화면에 노출시키는 설정
+                .paths(PathSelectors.ant("/**")) // RequestMapping으로 할당된 모든 URL 리스트를 추출해서 화면에 노출시키는 설정
                 .build();
     }
 
