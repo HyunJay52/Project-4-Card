@@ -18,9 +18,22 @@ public class SpringFoxConfig {
 
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.any()) //RequestHandler를 선택하기 위한 설정을 돕는다
-                .paths(PathSelectors.ant("/**")) // RequestMapping으로 할당된 모든 URL 리스트를 추출해서 화면에 노출시키는 설정
+                .apis(RequestHandlerSelectors.any()) //.apis(): API 문서를 만들어줄 범위를 지정
+                .paths(PathSelectors.ant("/**")) //하위 경로를 가지는 API에 대해 문서를 생성
                 .build();
+
+    //부가적으로 API 문서에 대한 내용을 수정하거나 추가하고 싶을때
+        /*     private ApiInfo apiInfo() {
+                return new ApiInfoBuilder()
+                        .title("제목 작성")
+                        .version("버전 작성")
+                        .description("설명 작성")
+                        .license("라이센스 작성")
+                        .licenseUrl("라이센스 URL 작성")
+                        .build();
+        }*/
+
+
     }
 
 }
