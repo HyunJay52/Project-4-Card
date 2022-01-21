@@ -40,6 +40,4 @@ public class IndexController {
     @GetMapping("/market/market_list")
     public String market() { return "/admin/board/market_list"; }
 
-    @GetMapping("/member/join")
-    public String join() { return "/guest/member/join"; }
 }
