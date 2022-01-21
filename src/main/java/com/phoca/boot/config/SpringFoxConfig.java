@@ -13,7 +13,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class SpringFoxConfig {
 
     //Docket been에서 select() 메서드는 ApiSelectorBuilder 인스턴스를 리턴하여,  Swagger에 의해 노출 된 엔드 포인트를 제어하는 방법을 제공
-
     @Bean
     public Docket api() {
 
