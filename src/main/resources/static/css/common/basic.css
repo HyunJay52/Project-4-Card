@@ -14,7 +14,7 @@ a:hover,a:active,a:visited,a:link{
 .list_container {
     width: 700px;
     height: 300px;
-    background: pink;
+    background: green;
     margin: 0 auto;
     padding: 0;
 }
