@@ -5,7 +5,7 @@
 
 <div class="container">
     <div class="card bg-light">
-        <article class="card-body mx-auto" style="max-width: 400px;">
+        <article class="card-body mx-auto" style="max-width: 600px;">
             <h4 class="card-title mt-3 text-center">회원가입</h4>
             <p>
                 <a href="" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i>   Login via Twitter</a>
@@ -15,42 +15,31 @@
             <form>
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                        <span class="input-group-text"> <i class="fa fa-user">이름</i> </span>
                     </div>
                     <input name="" class="form-control" placeholder="이름" type="text">
                 </div> <!-- form-group// -->
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                        <span class="input-group-text"> <i class="fa fa-envelope">이메일</i> </span>
                     </div>
                     <input name="" class="form-control" placeholder="이메일을 입력해주세요. ex)phoca@phoca.com" type="email">
                 </div> <!-- form-group// -->
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+                        <span class="input-group-text"> <i class="fa fa-phone">연락처</i> </span>
                     </div>
                     <input name="" class="form-control" placeholder="휴대폰번호를 입력해주세요. ex)010-1234-5678" type="text">
                 </div> <!-- form-group// -->
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-building"></i> </span>
-                    </div>
-                    <select class="form-control">
-                        <option selected=""> Select job type</option>
-                        <option>Designer</option>
-                        <option>Manager</option>
-                        <option>Accaunting</option>
-                    </select>
-                </div> <!-- form-group end.// -->
-                <div class="form-group input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                        <span class="input-group-text"> <i class="fa fa-lock">비밀번호</i> </span>
                     </div>
                     <input class="form-control" placeholder="비밀번호를 입력해주세요." type="password">
                 </div> <!-- form-group// -->
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                        <span class="input-group-text"> <i class="fa fa-lock">비밀번호 재확인</i> </span>
                     </div>
                     <input class="form-control" placeholder="비밀번호를 다시 입력해주세요." type="password">
                 </div> <!-- form-group// -->
@@ -65,5 +54,63 @@
 </div>
 <!--container end.//-->
 
+
+<main class="my-form">
+    <div class="cotainer">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">회원가입</div>
+                    <div class="card-body">
+                        <form name="my-form"  onsubmit="return validform()" method="">
+                            <div class="form-group row">
+                                <p>
+                                    <a href="" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i>   Login via Twitter</a>
+                                    <a href="" class="btn btn-block btn-google"> <i class="fab fa-google"></i>   Login via google</a>
+                                </p>
+                            </div>
+                            <div class="form-group row">
+                                <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail</label>
+                                <div class="col-md-6">
+                                    <input type="text" id="email_address" class="form-control" placeholder="이메일을 입력해주세요. ex)phoca@phoca.com" name="email-address">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="user_name" class="col-md-4 col-form-label text-md-right">이름</label>
+                                <div class="col-md-6">
+                                    <input type="text" id="user_name" class="form-control" name="username">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="phone_number" class="col-md-4 col-form-label text-md-right">연락처</label>
+                                <div class="col-md-6">
+                                    <input type="text" id="phone_number" placeholder="휴대폰번호를 입력해주세요. ex)010-1234-5678" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="password" class="col-md-4 col-form-label text-md-right">비밀번호</label>
+                                <div class="col-md-6">
+                                    <input type="password" class="form-control" placeholder="비밀번호를 입력해주세요." type="password">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                    <label for="password" class="col-md-4 col-form-label text-md-right">비밀번호 확인</label>
+                                    <div class="col-md-6">
+                                        <input type="password" class="form-control" placeholder="비밀번호를 다시 입력해주세요." type="password">
+                                    </div>
+                            </div>
+
+                   </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</main>
 
 {{>layout/footer}}
