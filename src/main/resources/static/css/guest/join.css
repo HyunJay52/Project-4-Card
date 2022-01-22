@@ -22,11 +22,11 @@
 
 .btn-google {
     background-color: #C71016;
-    color: white;
+     font-color: #FFF;
 }
 .btn-twitter {
     background-color: #42AEEC;
-    color: white;
+    font-color: #FFF;
 }
 
 body{
