@@ -34,9 +34,8 @@ public class IndexController {
         return "posts-update";
     }
 
-    @GetMapping("/member/login")
-    public String login() { return "/guest/member/login"; }
 
     @GetMapping("/market/market_list")
     public String market() { return "/admin/board/market_list"; }
+
 }
