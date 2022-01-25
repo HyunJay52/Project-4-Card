@@ -1,0 +1,27 @@
+.menu_ul{background-color:yellow;}
+.side_ul{background-color:blue}
+#logo{background-color:gray;}
+#searchWrap{float: left; text-align:center;};
+.menu_ul, .side_ul{list-style: none;}
+.menu_ul li>a{ font-color:black;}
+.side_ul{font-size:0.7; }
+header>ul{
+    list-style: none;
+	display: flex;
+	height: 100px;
+	line-height: 100px;
+	margin: 0 auto;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+header>ul>li{
+	font-size: 15px;
+	float: left;
+}
+
+header>ul>li>a:hover{
+	color:black;
+	font-weight: bold;
+	font-size: 16px;
+}
