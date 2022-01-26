@@ -1,62 +1,39 @@
-.board_navi {
-  width: 800px;
-  height: 150px;
-  margin: 0 auto;
-  padding: 0;
-  background: lightBlue;
+.group_navi {
+  height: 200px;
 }
-
-.group_list>li {
-  list-style: none;
-  float: left;
-  border-radius: 10px 100px / 120px;
-  width: 180px;
-  height: 150px;
-  margin: 0 5px;
-  padding: 0;
-  background: lightGreen;
+.group_navi>li {
+  width: 189px; height: 189px;
+  margin: 5px;
 }
 
 .sub_navi {
-  width: 800px;
-  height: 120px;
-  margin: 0 auto;
-  padding: 0;
-  background: pink;
+  height: 150px;
   display: none;
+  margin-top: 10px;
+  border-top: dotted;
 }
-
-.sub_list>li {
-  width: 120px;
-  height: 120px;
-  list-style: none;
-  float: left;
+.sub_navi>li {
+  width: 140px; height: 140px;
+  margin: 5px; padding: 0px;
+  background: lightgreen;
   border-radius: 50%;
-  margin: 0 5px;
-  padding: 0;
-  background: red;
 }
 
+/* card_list */
 .list_container {
-  width: 800px;
-  height: 100%;
-  margin: 100px auto;
-  padding: 0;
-  background: lightYellow;
+  width: 800px; height: auto;
+  margin: 100px 0 0 0; padding: 0;
+  background: lightsalmon;
 }
-
 .board_list {
-  width: 800px;
-
-  overflow: auto;
+  width: 800px; height: auto;
+  background: lightblue;
 }
-
 .board_list>li {
-  width: 180px;
-  height: 300px;
-  background: lightGreen;
-  list-style: none;
-  float: left;
-  margin: 0 5px;
-  padding: 0;
+  width: 256px;
+  height: 400px;
+  margin: 5px;
+  background: lightgreen;
+
 }
+
