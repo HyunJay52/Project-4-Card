@@ -44,3 +44,13 @@ body{
     margin-left: 0;
     margin-right: 0;
 }
+
+.btn-google {
+    background-color: #C71016;
+     font-color: #FFF;
+}
+.btn-twitter {
+    background-color: #42AEEC;
+    font-color: #FFF;
+}
+#ask{font-size:0.7px;}

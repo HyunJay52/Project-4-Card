@@ -15,19 +15,11 @@
     position: absolute;
     width: 100%;
     border-bottom: 1px solid #ddd;
-    top: 60%;
+    top: 100%;
     left: 0;
     z-index: 1;
 }
 
-.btn-google {
-    background-color: #C71016;
-     font-color: #FFF;
-}
-.btn-twitter {
-    background-color: #42AEEC;
-    font-color: #FFF;
-}
 
 body{
     margin: 0;

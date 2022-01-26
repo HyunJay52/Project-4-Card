@@ -1,5 +1,6 @@
 {{>layout/header}}
 
+<link rel="stylesheet" href="/css/common/basic.css">
 <!--join.css 추가-->
 <link rel="stylesheet" href="/css/guest/join.css">
 
@@ -9,13 +10,8 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">회원가입</div>
-                    <article class="card-body mx-auto" style="max-width: 800px;">
+                    <article class="card-body mx-auto" >
                         <form name="my-form"  onsubmit="return validform()" method="">
-                            <p>
-                                <a href="" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i>   Login via Twitter</a>
-                                <a href="" class="btn btn-block btn-google"> <i class="fab fa-google"></i>   Login via google</a>
-                            </p>
-
                             <div class="form-group input-group">
                               <!--  <label for="phone_number" class="col-md-4 col-form-label text-md-right">이름</label>-->
                                 <input id="user_name" class="form-control" placeholder="이름" type="text" name="username">
