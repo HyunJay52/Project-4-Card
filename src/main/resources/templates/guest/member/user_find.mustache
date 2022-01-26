@@ -1,0 +1,47 @@
+{{>layout/header}}
+
+<link rel="stylesheet" href="/css/common/basic.css">
+<!--join.css 추가-->
+<link rel="stylesheet" href="/css/guest/join.css">
+
+<main class="my-form">
+    <div class="cotainer">
+        <div class="row justify-content-center min-auto">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header"><h3>비밀번호찾기</h3></div>
+                    <article class="card-body max-auto" style="min-width:600px;" >
+                        <form name="my-form"  onsubmit="return validform()" method="">
+                            <div class="form-group input-group">
+                                <input name="email_address" class="form-control" placeholder="이메일을 입력해주세요. ex)phoca@phoca.com" type="email" id="email_address" >
+                                <button for="authentication" class="btn btn-secondary btn-sm m-1">인증</button>
+                            </div> <!-- form-group// -->
+                            <div class="form-group input-group">
+                                <input id="user_name" class="form-control" placeholder="이름" type="text" name="username">
+                            </div> <!-- form-group// -->
+                            <div class="form-group input-group">
+                                <input name="phone_number" class="form-control" placeholder="휴대폰번호를 입력해주세요. ex)010-1234-5678" type="text" id="phone_number" >
+                            </div> <!-- form-group// -->
+                            <div class="form-group input-group">
+                                <input class="form-control" placeholder="비밀번호를 입력해주세요." type="password" name="password">
+                            </div> <!-- form-group// -->
+                            <div class="form-group input-group">
+                                <input class="form-control" placeholder="비밀번호를 다시 입력해주세요." type="password" name="password">
+                            </div> <!-- form-group// -->
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-block"> 회원가입 </button>
+                            </div> <!-- form-group// -->
+                            <p class="text-center">이미 계정이 있으신가요?<a href="/member/login">로그인</a> </p>
+
+                        </form>
+                    </article>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</main>
+
+{{>layout/footer}}
