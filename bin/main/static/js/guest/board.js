@@ -8,19 +8,11 @@ var board_main = {
       alert(group_name);
     });
 
-    $('.board_list>li').on('click', function() {
-      _this.product_list();
-    });
-
   },
 
   group_name: function(group_name) {
     $('#what_name').append(group_name);
     $('.sub_navi').css('display', 'block');
-  },
-
-  product_list: function() {
-  	alert("clicked product");
   }
 }
 
