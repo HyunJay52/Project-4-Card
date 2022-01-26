@@ -57,4 +57,5 @@ body{
     color: #FFF;
 }
 .ask{font-size:0.9px;}
-button a{color:#FFF}
+.btn-wrap a{color:white}
+.center-block btn{max-width:500px;}
