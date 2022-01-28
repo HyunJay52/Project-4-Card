@@ -1,7 +1,6 @@
 # Project_4_Card
 
 ## Description
------
 *2021.01.10 ~ 2021.02.04*
 
 #### Summary
@@ -9,7 +8,7 @@ for K-POP fans
 
 #### Environment & Skills
   Skills | Java 8, Javascript, Jquery, HTML, CSS, Mustache, JPA|
- :-----: | :-----  |
+ :----- | :-----  |
  Framework | Springboot|
  Build Tool|	Gradle |
  DBMS | Mysql |
@@ -23,7 +22,6 @@ Cloning with git
 -->
 
 ## About Project
------
 #### 고려사항
 *확장성을 위한 객체지향의 기본 원리 DIP, OCP 준수
 *Spring framework의 IOC/DI , AOP의 활용
@@ -42,7 +40,6 @@ Admin |회원관리|... |
 
 
 ## Result
------
 #### Web Application UI
 
 
