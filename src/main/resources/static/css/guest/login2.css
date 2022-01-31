@@ -58,4 +58,4 @@ body{
 }
 .ask{font-size:0.9px;}
 .btn-wrap a{color:white}
-.center-block a{max-width:500px;}
+.center-block{max-width:500px; margin:0px; padding:0px;}
