@@ -1,15 +1,4 @@
-.menu_ul{background-color:yellow;}
-.side_ul{background-color:blue}
-#logo{background-color:gray;}
-#searchWrap{float: left; text-align:left;  }
-.searchForm{border:none; border-bottom:1px solid black; width:300px}
-
-
-.side_ul {list-style: none; }
-.side_ul li {float:left; padding-left:5px;}
-.side_ul a {font-size:xx-small; color:black;}
-
-
+/*header common*/
 header>ul{
 	display: flex;
 	height: 100px;
@@ -30,3 +19,22 @@ header>ul>li>a:hover{
 	font-size: 16px;
 }
 .row{margin:0; padding:0;}
+
+/*logo*/
+#logo{background-color:gray;}
+
+/*seach*/
+#searchWrap{ float:left;
+            text-align:left;  }
+.searchForm{ border:none;
+             border-bottom:1px solid black;
+             width:300px;
+             height:45px;}
+
+/*side ul*/
+.side_ul {list-style: none; }
+.side_ul li { float:left;
+              padding-left:5px;}
+.side_ul a { font-size:xx-small;
+             color:black;}
+
