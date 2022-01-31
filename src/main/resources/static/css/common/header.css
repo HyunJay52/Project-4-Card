@@ -1,12 +1,16 @@
 .menu_ul{background-color:yellow;}
 .side_ul{background-color:blue}
 #logo{background-color:gray;}
-#searchWrap{float: left; text-align:center;};
-.menu_ul, .side_ul{list-style: none;}
-.menu_ul li>a{ font-color:black;}
-.side_ul{font-size:0.7; }
+#searchWrap{float: left; text-align:left;  }
+.searchForm{border:none; border-bottom:1px solid black; width:300px}
+
+
+.side_ul {list-style: none; }
+.side_ul li {float:left; padding-left:5px;}
+.side_ul a {font-size:xx-small; color:black;}
+
+
 header>ul{
-    list-style: none;
 	display: flex;
 	height: 100px;
 	line-height: 100px;
@@ -25,3 +29,4 @@ header>ul>li>a:hover{
 	font-weight: bold;
 	font-size: 16px;
 }
+.row{margin:0; padding:0;}

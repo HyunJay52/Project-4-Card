@@ -80,3 +80,17 @@ a:hover,a:active,a:visited,a:link{
   font-size: 17px;
   text-overflow: ellipsis;
 }
+
+/*font - size*/
+.small {
+	font-size: xx-small;
+}
+.larger {
+	font-size: larger;
+}
+.point {
+	font-size: 24pt;
+}
+.percent {
+	font-size: 200%;
+}
