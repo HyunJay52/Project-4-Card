@@ -1,0 +1,59 @@
+{{>layout/admin/admin_header}}
+
+<div class="background">
+
+<h2>회원관리</h2>
+
+<div class="col-md-12">
+
+    <br/>
+    <!-- 목록 출력 영역 -->
+    <table class="table table-horizontal table-bordered table-hover text-center" id="member-mng_tbl">
+        <thead class="thead-strong">
+        <tr>
+            <th>번호</th>
+            <th>이메일</th>
+            <th>비밀번호</th>
+            <th>가입일</th>
+        </tr>
+        </thead>
+        <tbody id="tbody">
+        {{#posts}} <!-- posts라는 list 순환, java-for -->
+        <tr>
+            <td>{{id}}</td> <!-- \{\{변수명}} -->
+            <td><a href="/posts/update/{{id}}">{{email}}</a></td>
+            <td>{{password}}</td>
+            <td>{{joinDate}}</td>
+        </tr>
+        {{/posts}}
+        <!--TEST //-->
+        <tr>
+            <td>1</td> <!-- \{\{변수명}} -->
+            <td><a href="">Jay</a></td>
+            <td>jay12</td>
+            <td>2022.02.03</td>
+        </tr>
+
+        <tr>
+            <td>2</td> <!-- \{\{변수명}} -->
+            <td><a href="">Su</a></td>
+            <td>sususu</td>
+            <td>2022.02.03</td>
+        </tr>
+        <!--// TEST-->
+        <tr>
+            <td colspan="3">
+                <div class="col-lg-12" id="member-info1" ></div>
+                <div class="col-lg-12" id="member-info2" ></div>
+            </td>
+
+        </tr>
+
+        </tbody>
+    </table>
+</div> <!-- book source ends -->
+
+
+</div>
+<script src="/js/admin/member.js"></script>
+{{>layout/footer}}
