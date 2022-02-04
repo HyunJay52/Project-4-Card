@@ -13,9 +13,18 @@
                             <div class=" mx-3">
                                 <form action="" method="">
                                     <div class="center-block btn-wrap">
-                                        <a href="" class="btn btn-twitter btn-sm btn-block mx-2"> <i class="fab fa-twitter"></i>   TWITTER 로그인</a>
-                                        <a href="" class="btn btn-google btn-sm btn-block mx-2"> <i class="fab fa-google"></i>   GOOGLE 로그인</a>
-                                        <a href="" class="btn btn-naver btn-sm btn-block mx-2"> <i class="fab fa-naver"></i>   NAVER 로그인</a>
+                                        <div class="ask">별도의 회원가입없이 간편로그인으로 서비스를 이용하실 수 있습니다.</div>
+                                        <!-- 로그인 영역 -->
+                                        {{#userName}}
+                                            Logged in as: <span id="user">{{userName}}</span>
+                                            <a href="/logout" class="btn btn-info active" role="button">LogOut</a>
+                                        {{/userName}}
+                                        {{^userName}}
+                                            <a href="/oauth2/authorization/google" class="btn active btn-google btn-sm btn-block mx-2" role="button">  GOOGLE 로그인</a>
+                                            <a href="/oauth2/authorization/naver" class="btn active btn-naver btn-sm btn-block mx-2" role="button">   NAVER 로그인</a>
+                                            <a href="" class="btn btn-twitter btn-sm btn-block mx-2"> <i class="fab fa-twitter"></i>   TWITTER 로그인</a>
+                                        {{/userName}}
+
 
                                     </div>
                                     <div class="center-block">
