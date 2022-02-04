@@ -1,6 +1,6 @@
 {{>layout/admin/admin_header}}
 
-<div class="background container-fluid h-75 m-5">
+<div class="background container-fluid">
 
 <h2>회원관리</h2>
 
@@ -8,37 +8,57 @@
 
     <br/>
     <!-- 목록 출력 영역 -->
-    <table class="table table-horizontal table-bordered table-hover text-center" id="member-mng_tbl">
+    <table class="table  table-bordered table-hover text-center" id="member-mng_tbl">
         <thead class="thead-strong">
         <tr>
             <th>번호</th>
-            <th>이메일</th>
+            <th>간편로그인</th>
+            <th>아이디</th>
             <th>비밀번호</th>
+            <th>이메일</th>
+            <th>년도</th>
+            <th>프로필</th>
             <th>가입일</th>
+            <th>수정일</th>
         </tr>
         </thead>
         <tbody id="tbody">
         {{#posts}} <!-- posts라는 list 순환, java-for -->
         <tr>
+            <td>{{no}}</td>
+            <td>{{api}}</td>
             <td>{{id}}</td> <!-- \{\{변수명}} -->
-            <td><a href="/posts/update/{{id}}">{{email}}</a></td>
             <td>{{password}}</td>
+            <td><a href="/posts/update/{{id}}">{{email}}</a></td>
+            <td>{{birthyear}}</td>
+            <td>{{picture}}</td>
             <td>{{joinDate}}</td>
+            <td>{{modifyDate}}</td>
         </tr>
         {{/posts}}
         <!--TEST //-->
         <tr>
-            <td>1</td> <!-- \{\{변수명}} -->
-            <td><a href="">Jay</a></td>
-            <td>jay12</td>
-            <td>2022.02.03</td>
+            <td>1</td>
+            <td>google</td>
+            <td>jay</td>
+            <td>jay1234!</td>
+            <td><a href="">jay@google.com</a></td>
+            <td>1992</td>
+            <td>-</td>
+            <td>2022/02/05</td>
+            <td>{2022/02/05</td>
         </tr>
 
         <tr>
-            <td>2</td> <!-- \{\{변수명}} -->
-            <td><a href="">Su</a></td>
-            <td>sususu</td>
-            <td>2022.02.03</td>
+            <td>2</td>
+            <td>google</td>
+            <td>su</td>
+            <td>susu1234!</td>
+            <td><a href="">sususu@google.com</a></td>
+            <td>1993</td>
+            <td>-</td>
+            <td>2022/02/05</td>
+            <td>{2022/02/05</td>
         </tr>
         <!--// TEST-->
         <tr>
