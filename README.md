@@ -15,10 +15,13 @@ for K-POP fans
  OS | Window, Mac OS |
  Boilerplate Code Library|	Lombok|
  IDE | InteliJ | 
- API Documentation|	Springfox OpenAPI 2.0, Google Oauth2 API, Twitter openAPI|
+ API Documentation|	Springfox OpenAPI 2.0, Google Oauth2 API, Twitter openAPI, Naver openAPI|
  Etc. | Git, Github|
+ 
 <!--### Install
+```
 Cloning with git
+```
 -->
 
 ## About Project
