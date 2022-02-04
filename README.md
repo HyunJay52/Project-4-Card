@@ -1,7 +1,7 @@
 # Project_4_Card
 
 ## Description
-*2021.01.10 ~ 2021.02.04*
+*2021.01.10 ~ 진행중*
 
 #### Summary
 for K-POP fans
