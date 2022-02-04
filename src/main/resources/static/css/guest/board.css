@@ -1,3 +1,4 @@
+/* board navi CSS */
 .board_navi {
   width: 800px;
   height: 150px;
@@ -6,7 +7,7 @@
   background: lightBlue;
 }
 
-.group_list>li {
+.group_navi>li {
   list-style: none;
   float: left;
   border-radius: 10px 100px / 120px;
@@ -22,11 +23,11 @@
   height: 120px;
   margin: 0 auto;
   padding: 0;
-  background: pink;
+  background: lightYellow;
   display: none;
 }
 
-.sub_list>li {
+.sub_navi>li {
   width: 120px;
   height: 120px;
   list-style: none;
@@ -34,9 +35,10 @@
   border-radius: 50%;
   margin: 0 5px;
   padding: 0;
-  background: red;
+  background: pink;
 }
 
+/* product list CSS */
 .list_container {
   width: 800px;
   height: 100%;
@@ -47,16 +49,89 @@
 
 .board_list {
   width: 800px;
-
   overflow: auto;
 }
 
 .board_list>li {
-  width: 180px;
-  height: 300px;
-  background: lightGreen;
+  width: 256px;
+  height: 410px;
+  background: #fff;
   list-style: none;
   float: left;
-  margin: 0 5px;
+  margin: 5px;
   padding: 0;
+}
+
+/* product img */
+.product_imgbox {
+  width: 256px;
+  height: 300px;
+  overflow: hidden;
+  margin: 0;
+}
+.product_img {
+  width: 100%; height: 100%;
+  border-radius: 30px;
+}
+.product_title {
+  margin: 10px auto; padding: 0;
+}
+.product_title>li{
+  list-style: none;
+  width: 200px; height: 25px;
+  margin: 0 auto;
+}
+.product_title>li:first-child {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+.product_title>li:nth-child(2), .product_title>li:last-of-type {
+  text-align: right;
+   margin: 0 auto;
+}
+.cate_fnt {
+  color: gray;
+  font-size: 13px;
+}
+.title_fnt {
+  font-weight: bold;
+  font-size: 17px;
+  text-overflow: clip;
+}
+
+
+/* board detail CSS */
+.contact_style>li {
+  list-style: none;
+  float: left;
+  margin: 0 auto; padding: 0;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.prod_detail {
+  width: 800px; height: 500px;
+  margin-bottom: 30px;
+}
+.prod_pic {
+  width: 400px; height: 100%;
+  background-color: pink;
+  float:left;
+}
+.prod_pic>img {
+  /* 100%로 하니까 이미지가 넘침, 해결필요 */
+  width: 380px; height: 96%;
+  margin: 10px;
+  border-radius: 10px;
+}
+.prod_content {
+  width: 400px; height: 500px;
+  margin: 0 auto;
+  background-color: green;
+  float: left;
+}
+
+.cont_extra {
+  width: 800px; height: auto;
+  background-color: lightgoldenrodyellow;
 }

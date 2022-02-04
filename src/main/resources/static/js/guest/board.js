@@ -21,6 +21,7 @@ var board_main = {
 
   product_list: function() {
   	alert("clicked product");
+    window.location.href = "/market/market_list/content_detail";
   }
 }
 
