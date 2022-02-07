@@ -5,8 +5,8 @@
         <ul class="clearfix group_navi navi_style">
             <li>group1
                 <!--        <div id="test_img">
-                          group_list
-                        </div> -->
+                                  group_list
+                                </div> -->
             </li>
             <li>group 2</li>
             <li>group 3</li>
@@ -21,21 +21,17 @@
         </ul>
     </div>
 
-    <p style="clear: left"></p>
-    <!-- cate list -->
-    <span>PHOCA</span><span>GOODS</span>
-    <div class="dropdown">
-        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-            카테고리
-        </button>
-        <div class="dropdown-menu">
-            <div><a class="dropdown-item" href="#">Photo Card</a></div>
-            <div><a class="dropdown-item" href="#">Goods</a></div>
-        </div>
-    </div>
+    <p style="clear:left"></p>
 
-    <!-- product list -->
+
+    <!-- board list -->
     <div class="list_container">
+        <div class="cate_box">
+            <span class="cate_phoca">포카</span>
+            &nbsp;/&nbsp;
+            <span class="cate_goods">굿즈</span>
+        </div>
+
         <ul class="clearfix board_list navi_style">
             <li>
                 <div class="product_imgbox">
@@ -44,8 +40,9 @@
                 <ul class="product_title">
                     <li><span class="cate_fnt">[판매]</span> ￦ 5000</li>
                     <li class="cate_fnt">몬스타엑스, 셔누</li>
-                    <li>
-                        <span class="title_fnt">THE CONNECT in SEOUL</span>
+                    <li class="title_fnt" style="background: red;">
+                        THE CONNECT in SEOUL 123412341234123412341234123412341234
+                        <!-- 초과 문자열 수정 작업이 필요함 -->
                     </li>
                 </ul>
             </li>
@@ -56,9 +53,22 @@
             <li>상품 6</li>
             <li>상품 7</li>
             <li>상품 8</li>
+            <li>상품 9</li>
         </ul>
     </div>
 
+    <!-- pagenation -->
+    <div>
+        <ul class="pagination_div">
+        </ul>
+    </div>
+
+    <!-- move to Write -->
+    <div class="prod_btn_con">
+        <button type="button" id="prod_write">내 포카&nbsp;/&nbsp;굿즈 등록</button>
+    </div>
+
 </div>
+
 
 {{>layout/footer}}

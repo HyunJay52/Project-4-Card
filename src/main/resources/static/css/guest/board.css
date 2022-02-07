@@ -1,65 +1,38 @@
-/* board navi CSS */
+/* board navigation */
 .board_navi {
-  width: 800px;
-  height: 150px;
-  margin: 0 auto;
-  padding: 0;
-  background: lightBlue;
+  width: 800px; height: auto;
+  background: red;
 }
-
-.group_navi>li {
+.navi_style {
+  width: 800px; height: auto;
+  margin: 0 auto; padding: 0;
+  border: 1px solid #fff;
+}
+.navi_style>li {
   list-style: none;
   float: left;
-  border-radius: 10px 100px / 120px;
-  width: 180px;
-  height: 150px;
-  margin: 0 5px;
-  padding: 0;
-  background: lightGreen;
+  margin: 0 auto; padding: 0;
+  border-radius: 20px;
+  background-color: #fff;
 }
 
-.sub_navi {
+/* cate CSS */
+.cate_box {
+  width: 770px;
+  height: 40px;
+  margin-left: 30px;
+}
+.cate_phoca, .cate_goods {
   width: 800px;
-  height: 120px;
-  margin: 0 auto;
-  padding: 0;
-  background: lightYellow;
-  display: none;
+  height: 40px;
+  line-height: 40px;
 }
-
-.sub_navi>li {
-  width: 120px;
-  height: 120px;
-  list-style: none;
-  float: left;
-  border-radius: 50%;
-  margin: 0 5px;
-  padding: 0;
-  background: pink;
+.cate_phoca {
+  font-weight: bold;
+  font-size: 18px;
 }
-
-/* product list CSS */
-.list_container {
-  width: 800px;
-  height: 100%;
-  margin: 100px auto;
-  padding: 0;
-  background: lightYellow;
-}
-
-.board_list {
-  width: 800px;
-  overflow: auto;
-}
-
-.board_list>li {
-  width: 256px;
-  height: 410px;
-  background: #fff;
-  list-style: none;
-  float: left;
-  margin: 5px;
-  padding: 0;
+.cate_goods {
+  color: #606060;
 }
 
 /* product img */
@@ -89,6 +62,9 @@
   text-align: right;
    margin: 0 auto;
 }
+.product_title>li:last-child {
+  text-overflow: ellipsis;
+}
 .cate_fnt {
   color: gray;
   font-size: 13px;
@@ -96,7 +72,81 @@
 .title_fnt {
   font-weight: bold;
   font-size: 17px;
-  text-overflow: clip;
+}
+
+/* board list CSS */
+.board_navi {
+  width: 800px;
+  height: 150px;
+  margin: 0 auto;
+  padding: 0;
+  background: lightBlue;
+}
+
+.group_navi > li {
+  border-radius: 10px 100px / 120px;
+  width: 180px;  height: 150px;
+  margin: 0 5px;
+  padding: 0;
+  background: lightGreen;
+}
+
+.sub_navi {
+  width: 800px;
+  height: 120px;
+  margin: 0 auto;
+  padding: 0;
+  background: pink;
+  display: none;
+}
+
+.sub_navi>li {
+  width: 120px;
+  height: 120px;
+  list-style: none;
+  float: left;
+  border-radius: 50%;
+  margin: 0 5px;
+  padding: 0;
+  background: red;
+}
+
+.list_container {
+  width: 800px;
+  height: 100%;
+  margin: 100px auto;
+  padding: 0;
+  background: lightYellow;
+}
+
+.board_list {
+  width: 800px;
+  overflow: auto;
+}
+
+.board_list>li {
+  width: 255px;
+  height: 410px;
+  background: lightGreen;
+  list-style: none;
+  float: left;
+  margin: 5px;
+  padding: 0;
+}
+
+/* write button */
+.prod_btn_con {
+  width: 800px; height: 40px;
+  margin-top: 30px;
+}
+#prod_write {
+  margin-left: 620px;
+  width: 160px; height: 40px;
+  text-height: 30px;
+  font-weight: bold;
+  color: #fff;
+  background-color: black;
+  border-radius: 20px;
 }
 
 
