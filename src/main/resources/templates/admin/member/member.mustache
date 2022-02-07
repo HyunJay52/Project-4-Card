@@ -1,15 +1,15 @@
 {{>layout/admin/admin_header}}
-
+<link rel="stylesheet" href="/css/common/basic.css">
 <link rel="stylesheet" href="/css/admin/member-mng.css">
+<script src="/js/common/jquery.twbsPagination.js"></script>
 
 <div class="background container-fluid">
-
-    <h2>회원관리</h2>
-
     <div class="col-md-12 mt-5">
+    <h2>회원관리</h2>
 
         <br/>
         <!-- 목록 출력 영역 -->
+      <div style="background-color:yello;">
         <ul id="list">
             <!--상단 제목 열//-->
             <li class="">가입번호</li>
@@ -22,9 +22,9 @@
             <li class="menu">등록일</li>
             <li class="menu">수정일</li>
             <!--// 상단 제목 열-->
-                <!-- {{#posts}} posts라는 list 순환, java-for -->
+          <!-- {{#posts}} posts라는 list 순환, java-for -->
             <li class="">1</li>
-            <li class="menu">ja@gmail.com</li>
+            <li class="menu"><a href="">ja@gmail.com</a></li>
             <li class="menu">김제이에이</li>
             <li class="menu">img</li>
             <li class="menu">010-0000-0000</li>
@@ -34,7 +34,7 @@
             <li class="menu">2022.02.07</li>
 
             <li class="">2</li>
-            <li class="menu">su@gmail.com</li>
+            <li class="menu"><a href="">su@gmail.com</a></li>
             <li class="menu">장수우</li>
             <li class="menu">img</li>
             <li class="menu">010-1000-0000</li>
@@ -42,24 +42,12 @@
             <li class="menu">GUEST</li>
             <li class="menu">2022.02.07</li>
             <li class="menu">2022.02.07</li>
-                <!-- {{/posts}}-->
+           <!-- {{/posts}}-->
         </ul>
-
+      </div>
     </div> <!-- source ends -->
 
-    <nav aria-label="Page navigation example mt-3">
-        <ul class="pagination justify-content-center">
-            <li class="page-item disabled">
-                <a class="page-link" href="#" tabindex="-1">Previous</a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-                <a class="page-link" href="#">Next</a>
-            </li>
-        </ul>
-    </nav>
+
 </div>
 
 {{>layout/footer}}
