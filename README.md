@@ -1,7 +1,7 @@
 # Project_4_Card
 
 ## Description
-*2021.01.10 ~ 2021.02.04*
+*2021.01.10 ~ 진행중*
 
 #### Summary
 for K-POP fans
@@ -15,10 +15,13 @@ for K-POP fans
  OS | Window, Mac OS |
  Boilerplate Code Library|	Lombok|
  IDE | InteliJ | 
- API Documentation|	Springfox OpenAPI 2.0, Google Oauth2 API, Twitter openAPI|
+ API Documentation|	Springfox OpenAPI 2.0, Google Oauth2 API, Twitter openAPI, Naver openAPI|
  Etc. | Git, Github|
+ 
 <!--### Install
+```
 Cloning with git
+```
 -->
 
 ## About Project
