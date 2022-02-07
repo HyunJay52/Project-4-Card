@@ -13,7 +13,8 @@ public class OAuthAttributes {
     private String nameAttributeKey;
     private String name;
     private String email;
-    private String picture;
+    private String password;
+    private String mobile;
 
     @Builder
     public OAuthAttributes(Map<String, Object> attributes,
@@ -23,7 +24,8 @@ public class OAuthAttributes {
         this.nameAttributeKey = nameAttributeKey;
         this. name = name;
         this.email = email;
-        this.picture = picture;
+        this.password = password;
+        this.mobile = mobile;
     }
 
     //of() - OAuth2User에서 반환하는 사용자 정보는 Map이기 때문에 값 하나하나 변환
@@ -31,7 +33,7 @@ public class OAuthAttributes {
 
         // naver
         if("naver".equals(registrationId)){
-            return ofNaver("id", attributes);
+            return ofKakao("id", attributes);
 
         // twitter
         }else if("twitter".equals(registrationId)){
@@ -47,20 +49,17 @@ public class OAuthAttributes {
         return OAuthAttributes.builder()
                 .name((String) attributes.get("name"))
                 .email((String) attributes.get("email"))
-                .picture((String) attributes.get("picture"))
                 .attributes(attributes)
                 .nameAttributeKey(userNameAttributeName)
                 .build();
     }
 
-    private static OAuthAttributes ofNaver(String userNameAttributeName, Map<String, Object> attributes){
+    private static OAuthAttributes ofKakao(String userNameAttributeName, Map<String, Object> attributes){
         Map<String, Object> response = (Map<String, Object>)attributes.get("response");
 
         return OAuthAttributes.builder()
                 .name((String) attributes.get("name"))
                 .email((String) attributes.get("email"))
-                .picture((String) attributes.get("birthyear"))
-                .picture((String) attributes.get("mobile"))
                 .attributes(response)
                 .nameAttributeKey(userNameAttributeName)
                 .build();
@@ -81,7 +80,6 @@ public class OAuthAttributes {
         return User.builder()
                 .name(name)
                 .email(email)
-                .picture(picture)
                 .role(Role.GUEST) //가입기본권한 == GUEST
                 .build();
     }

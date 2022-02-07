@@ -20,9 +20,16 @@
                                             <a href="/logout" class="btn btn-info active" role="button">LogOut</a>
                                         {{/userName}}
                                         {{^userName}}
-                                            <a href="/oauth2/authorization/google" class="btn active btn-google btn-sm btn-block mx-2" role="button">  GOOGLE 로그인</a>
-                                            <a href="/oauth2/authorization/naver" class="btn active btn-naver btn-sm btn-block mx-2" role="button">   NAVER 로그인</a>
-                                            <a href="" class="btn btn-twitter btn-sm btn-block mx-2"> <i class="fab fa-twitter"></i>   TWITTER 로그인</a>
+                                            <a href="/oauth2/authorization/google"  id="google-button" class="btn btn-block btn-social btn-google" role="button">
+                                                <i class="fa fa-google"></i>    Sign in with Google
+                                            </a>
+                                            <a href="" id="kakao-button" class="btn btn-block btn-social btn-kakao" role="button">
+                                                <img src="../img/login/kakao_login.png" alt="Sign in with kakao"/>
+                                            </a>
+                                            <a id="twitter-button" class="btn btn-block btn-social btn-twitter" role="button">
+                                                <i class="fa fa-twitter"></i>   Sign in with Twitter
+                                            </a>
+
                                         {{/userName}}
 
 
