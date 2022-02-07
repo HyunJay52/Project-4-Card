@@ -1,5 +1,5 @@
 {{>layout/admin/admin_header}}
-
+<link rel="stylesheet" href="/css/admin/member-mng.css">
 <div class="background container-fluid">
 
 <h2>회원관리</h2>
@@ -8,8 +8,9 @@
 
     <br/>
     <!-- 목록 출력 영역 -->
-    <ul id="list">
-        <li class="">번호</li>
+    <ol id="list">
+        <!--상단 제목 열//-->
+        <li class="">가입번호</li>
         <li class="menu">이메일</li>
         <li class="menu">이름</li>
         <li class="menu">프로필</li>
@@ -18,70 +19,31 @@
         <li class="menu">사용자구분</li>
         <li class="menu">등록일</li>
         <li class="menu">수정일</li>
-    </ul>
-    <table class="table  table-bordered table-hover text-center" id="member-mng_tbl">
-        <thead class="thead-strong">
-        <tr>
-            <th>번호</th>
-            <th>간편로그인</th>
-            <th>아이디</th>
-            <th>비밀번호</th>
-            <th>이메일</th>
-            <th>년도</th>
-            <th>프로필</th>
-            <th>가입일</th>
-            <th>수정일</th>
-        </tr>
-        </thead>
-        <tbody id="tbody">
+        <!--// 상단 제목 열-->
         {{#posts}} <!-- posts라는 list 순환, java-for -->
-        <tr>
-            <td>{{no}}</td>
-            <td>{{api}}</td>
-            <td>{{id}}</td> <!-- \{\{변수명}} -->
-            <td>{{password}}</td>
-            <td><a href="/posts/update/{{id}}">{{email}}</a></td>
-            <td>{{birthyear}}</td>
-            <td>{{picture}}</td>
-            <td>{{joinDate}}</td>
-            <td>{{modifyDate}}</td>
-        </tr>
+        <li class="">1</li>
+        <li class="menu">ja@gmail.com</li>
+        <li class="menu">김제이에이</li>
+        <li class="menu">img</li>
+        <li class="menu">010-0000-0000</li>
+        <li class="menu">Y</li>
+        <li class="menu">GUEST</li>
+        <li class="menu">2022.02.07</li>
+        <li class="menu">{{editDate}}</li>
         {{/posts}}
-        <!--TEST //-->
-        <tr>
-            <td>1</td>
-            <td>google</td>
-            <td>jay</td>
-            <td>jay1234!</td>
-            <td><a href="">jay@google.com</a></td>
-            <td>1992</td>
-            <td>-</td>
-            <td>2022/02/05</td>
-            <td>{2022/02/05</td>
-        </tr>
 
-        <tr>
-            <td>2</td>
-            <td>google</td>
-            <td>su</td>
-            <td>susu1234!</td>
-            <td><a href="">sususu@google.com</a></td>
-            <td>1993</td>
-            <td>-</td>
-            <td>2022/02/05</td>
-            <td>{2022/02/05</td>
-        </tr>
-        <!--// TEST-->
-        <tr>
-            <td colspan="3">
-                <div class="col-lg-12" id="member-info1" ></div>
-                <div class="col-lg-12" id="member-info2" ></div>
-            </td>
-
-        </tr>
-
-        </tbody>
-    </table>
+        {{#posts}} <!-- posts라는 list 순환, java-for -->
+            <li class="">1</li>
+            <li class="menu">su@gmail.com</li>
+            <li class="menu">장수우</li>
+            <li class="menu">img</li>
+            <li class="menu">010-1000-0000</li>
+            <li class="menu">Y</li>
+            <li class="menu">GUEST</li>
+            <li class="menu">2022.02.07</li>
+            <li class="menu">{{editDate}}</li>
+        {{/posts}}
+    </ol>
 
 </div> <!-- source ends -->
 
