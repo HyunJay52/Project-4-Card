@@ -1,39 +1,39 @@
 {{>layout/admin/admin_header}}
+
 <link rel="stylesheet" href="/css/admin/member-mng.css">
+
 <div class="background container-fluid">
 
-<h2>회원관리</h2>
+    <h2>회원관리</h2>
 
-<div class="col-md-12 mt-5">
+    <div class="col-md-12 mt-5">
 
-    <br/>
-    <!-- 목록 출력 영역 -->
-    <ol id="list">
-        <!--상단 제목 열//-->
-        <li class="">가입번호</li>
-        <li class="menu">이메일</li>
-        <li class="menu">이름</li>
-        <li class="menu">프로필</li>
-        <li class="menu">연락처</li>
-        <li class="menu">활동여부</li>
-        <li class="menu">사용자구분</li>
-        <li class="menu">등록일</li>
-        <li class="menu">수정일</li>
-        <!--// 상단 제목 열-->
-        {{#posts}} <!-- posts라는 list 순환, java-for -->
-        <li class="">1</li>
-        <li class="menu">ja@gmail.com</li>
-        <li class="menu">김제이에이</li>
-        <li class="menu">img</li>
-        <li class="menu">010-0000-0000</li>
-        <li class="menu">Y</li>
-        <li class="menu">GUEST</li>
-        <li class="menu">2022.02.07</li>
-        <li class="menu">{{editDate}}</li>
-        {{/posts}}
-
-        {{#posts}} <!-- posts라는 list 순환, java-for -->
+        <br/>
+        <!-- 목록 출력 영역 -->
+        <ul id="list">
+            <!--상단 제목 열//-->
+            <li class="">가입번호</li>
+            <li class="menu">이메일</li>
+            <li class="menu">이름</li>
+            <li class="menu">프로필</li>
+            <li class="menu">연락처</li>
+            <li class="menu">활동여부</li>
+            <li class="menu">사용자구분</li>
+            <li class="menu">등록일</li>
+            <li class="menu">수정일</li>
+            <!--// 상단 제목 열-->
+                <!-- {{#posts}} posts라는 list 순환, java-for -->
             <li class="">1</li>
+            <li class="menu">ja@gmail.com</li>
+            <li class="menu">김제이에이</li>
+            <li class="menu">img</li>
+            <li class="menu">010-0000-0000</li>
+            <li class="menu">Y</li>
+            <li class="menu">GUEST</li>
+            <li class="menu">2022.02.07</li>
+            <li class="menu">2022.02.07</li>
+
+            <li class="">2</li>
             <li class="menu">su@gmail.com</li>
             <li class="menu">장수우</li>
             <li class="menu">img</li>
@@ -41,11 +41,11 @@
             <li class="menu">Y</li>
             <li class="menu">GUEST</li>
             <li class="menu">2022.02.07</li>
-            <li class="menu">{{editDate}}</li>
-        {{/posts}}
-    </ol>
+            <li class="menu">2022.02.07</li>
+                <!-- {{/posts}}-->
+        </ul>
 
-</div> <!-- source ends -->
+    </div> <!-- source ends -->
 
     <nav aria-label="Page navigation example mt-3">
         <ul class="pagination justify-content-center">
@@ -61,5 +61,5 @@
         </ul>
     </nav>
 </div>
-<script src="/js/admin/member.js"></script>
+
 {{>layout/footer}}
