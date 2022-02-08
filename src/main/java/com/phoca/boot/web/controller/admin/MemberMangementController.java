@@ -9,5 +9,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class MemberMangementController {
 
         @GetMapping("/admin/member")
-        public String memberMng() { return "/admin/member/member"; }
+        public String memberMng() { return "/admin/member/member-mng"; }
+
+        @GetMapping("/admin/member-detail")
+        public String memberDetailMng() { return "/admin/member/member-detail-mng"; }
 }
