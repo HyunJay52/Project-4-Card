@@ -2,7 +2,7 @@ var board_main = {
   init: function() {
     var _this = this;
 
-		//네비바 선택
+	//네비바 선택
     $('.group_navi>li').on('click', function() {
       var group_name = $(this).text();
       _this.group_name(group_name)
@@ -92,11 +92,13 @@ var board_main = {
   },
 
 
-	//list function > 상세보기 페이지로 넘겨주기
+   //list function > 상세보기 페이지로 넘겨주기
   product_list: function() {
     alert("clicked product");
     window.location.href = "/market/market_list/content_detail";
   }
+
+  //
 }
 
 board_main.init();

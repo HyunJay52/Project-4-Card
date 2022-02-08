@@ -1,4 +1,34 @@
 {{>layout/header}}
 working on this page...
 please wait... 🙏
+
+<div class="background">
+    <div class="prod_inputbox">
+        <form class="prod_input">
+            <input id="prod_title" name="prod_title" placeholder="제목을 입력하세요" />
+            <textarea id="prod_content" name="prod_content"  placeholder="내용을 입력해주세요."></textarea>
+
+            <div class="img_upload">
+                <label class="img_label" id="img_label" for="img_input">
+                    <div class="inner_upload">
+                        이미지 첨부 [클릭 || 드래그&드랍]
+                    </div>
+                </label>
+
+                <input id="img_input" class="img_input" accept="image/*" type="file" required="true" multiple="true" hidden="ture">
+                <p class="preview_title">미리보기</p>
+                <div class="img_preview" id="img_preview">
+                </div>
+
+            </div>
+            <button type="submit">
+                등록하기
+            </button>
+            <button type="button">
+                취소
+            </button>
+        </form>
+    </div>
+</div>
+
 {{>layout/footer}}
