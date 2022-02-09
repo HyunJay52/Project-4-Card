@@ -1,0 +1,80 @@
+{{>layout/admin/admin_header}}
+<link rel="stylesheet" href="/css/admin/member-mng.css">
+<div class="background container-fluid">
+<!--선택한 회원의 상세 정보를 조회합니다. 조회항목 : 개인정보/ 게시글-->
+    <h3>회원 상세정보</h3>
+
+    <div class="col-md-12">
+
+        <br/>
+        <!-- 목록 출력 영역// -->
+        <!--회원정보-->
+        <h5>회원 정보</h5>
+        <div class="box rounded" alt="...">
+
+            <div class="table-responsive">
+                <table class="table table-responsive table-borderless table-hover ">
+                    <thead>
+                    <tr>
+                        <th scope="col" width="8%">번호</th>
+                        <th scope="col" width="15%">이메일</th>
+                        <th scope="col" width="10%">이름</th>
+                        <th scope="col" width="15%">연락처</th>
+                        <th scope="col" width="10%">프로필</th>
+                        <th scope="col" width="5%">상태</th>
+                        <th scope="col" width="15%">가입일</th>
+                        <th scope="col" width="15%">수정일</th>
+                        <th scope="col" width="10%">게시글</th>
+                        <th scope="col" width="10%"> <span>구분</span></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td scope="row">1</td>
+                        <td>test@gmail.com</td>
+                        <td>테스트</td>
+                        <td>010-0000-0000</td>
+
+                        <td><img src="" width="25"> img</td>
+                        <td><span>Y</span></td>
+                        <td><span>2022.02.10</span></td>
+                        <td><span>2022.02.10</span></td>
+                        <td><span>o</span></td>
+                        <td><span>G</span></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <!--//회원정보-->
+        <!--회원 게시글-->
+        <h5>게시글 (select?전체보기, 게시글, 문의하기</h5>
+        <div class="box rounded" alt="...">
+            <span  class="inbox-title">게시글</span>
+            <div  class="inbox">
+
+            </div>
+            <span  class="inbox-title">댓글</span>
+            <div  class="inbox">
+
+            </div>
+            <span  class="inbox-title">문의내역</span>
+            <div  class="inbox">
+            </div>
+        </div>
+        <!--// 회원 게시글-->
+        <!--회원 문의 내역-->
+        <h5>채팅내역</h5>
+         <div class="box rounded" alt="...">
+
+        </div>
+        <!--//회원 문의내역-->
+    </div>
+        <!-- //목록 출력 영역 -->
+
+</div> <!-- source ends -->
+
+</div>
+
+{{>layout/footer}}
