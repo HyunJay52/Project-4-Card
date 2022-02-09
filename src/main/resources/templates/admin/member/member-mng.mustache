@@ -15,11 +15,15 @@
         </div>
 
     <div class="table-responsive">
-        <table class="table table-bordered table-hover ">
+        <table class="table table-borderless table-hover ">
             <thead>
             <tr>
-                <th scope="col" width="5%"><input class="form-check-input" type="checkbox"/></th>
-                <th scope="col" width="8%">번호</th>
+                <th scope="col" width="5%">
+                    <div class="checkbox">
+                        <input type="checkbox" class="custom-control-input form-check-input" name="memberchk" id="" >
+                    </div>
+                </th>
+                <th scope="col" width="5%">번호</th>
                 <th scope="col" width="15%">이메일</th>
                 <th scope="col" width="10%">이름</th>
                 <th scope="col" width="15%">연락처</th>
@@ -27,16 +31,15 @@
                 <th scope="col" width="5%">상태</th>
                 <th scope="col" width="10%">가입일</th>
                 <th scope="col" width="10%">수정일</th>
-                <th scope="col" width="8%">게시글</th>
-                <th scope="col" width="8%"> <span>구분</span></th>
-                <th scope="col" class="text-end" width="3%"> <span></span></th>
+                <th scope="col" width="5%">게시글</th>
+                <th scope="col" class="text-end"  width="5%"> <span>구분</span></th>
             </tr>
             </thead>
             <tbody>
             <tr>
                 <td >
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input form-check-input" id="" checked>
+                    <div class="checkbox">
+                        <input type="checkbox" class="custom-control-input form-check-input" name="memberchk" id="" checked>
                     </div>
                 </td>
                 <td scope="row">1</td>
@@ -49,8 +52,7 @@
                 <td><span>2022.02.10</span></td>
                 <td><span>2022.02.10</span></td>
                 <td><span>o</span></td>
-                <td><span>G</span></td>
-                <td class="text-end"><i class="fa fa-ellipsis-h ms-3"></i> </td>
+                <td class="text-end" ><span>G</span></td>
             </tr>
 
 
