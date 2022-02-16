@@ -52,10 +52,14 @@ body{
     background-color: #42AEEC;
     color: #FFF;
 }
-.btn-naver {
-    background-color: #09CE20;
+.btn-kakao {
+    background-color: #F9E000;
     color: #FFF;
 }
-.ask{font-size:0.9px;}
+.title{margin-bottom:30px;}
+.ask{font-size:0.9px;
+      color:gray;
+      margin: 0 0 20px 20px;}
 .btn-wrap a{color:white}
 .center-block{max-width:500px; margin:0px; padding:0px;}
+.btn-wrap button:active { box-shadow: 1px 1px 0 rgb(0,0,0,0.5); position: relative; top:2p}

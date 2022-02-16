@@ -1,0 +1,70 @@
+{{>layout/header}}
+
+<!--join.css 추가-->
+<link rel="stylesheet" href="/css/guest/login.css">
+
+<div id="login">
+        <main class="login-form">
+            <div class="cotainer">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-header">로그인</div>
+                            <div class="card-body max-auto" style="min-width:600px;">
+                                <form action="" method="">
+                                    <div class="form-group row">
+                                        <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail</label>
+                                        <div class="col-md-6">
+                                            <input type="text" id="email_address" class="form-control" name="email-address" placeholder="이메일을 입력해주세요. ex)phoca@phoca.com" required autofocus>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
+                                        <div class="col-md-6">
+                                            <input type="password" id="password" class="form-control" name="password" placeholder="비밀번호를 입력해주세요." required>
+                                            <a href="#" class="btn btn-link ask" >
+                                                    비밀번호를 잊으셨나요?
+                                            </a>
+                                        </div>
+                                    </div>
+<!--
+                                    <div class="form-group row">
+                                        <div class="col-md-6 offset-md-4">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="remember"> 이메일 기억하기
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>-->
+
+                                    <div class="col-md-6 offset-md-4 center-block">
+                                        <button type="submit" class="btn btn-primary">
+                                            로그인
+                                        </button>
+                                        <a href="" class="btn btn-small btn-twitter"> <i class="fab fa-twitter"></i>   Twitter 로그인</a>
+                                        <a href="" class="btn btn-small btn-google"> <i class="fab fa-google"></i>   google 로그인</a>
+
+
+                                    </div>
+
+                                    <div class="text-center">
+                                        <a href="#" class="btn btn-link ask">
+                                            계정이없으신가요?
+                                        </a>
+                                        <a type="button" href="/member/join" class="btn btn-default ask">
+                                            회원가입
+                                        </a>
+                                    </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+</main>
+
+    </div>
+
+{{>layout/footer}}

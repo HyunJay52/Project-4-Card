@@ -13,7 +13,8 @@ public class OAuthAttributes {
     private String nameAttributeKey;
     private String name;
     private String email;
-    private String picture;
+    private String password;
+    private String mobile;
 
     @Builder
     public OAuthAttributes(Map<String, Object> attributes,
@@ -23,19 +24,54 @@ public class OAuthAttributes {
         this.nameAttributeKey = nameAttributeKey;
         this. name = name;
         this.email = email;
-        this.picture = picture;
+        this.password = password;
+        this.mobile = mobile;
     }
 
     //of() - OAuth2User에서 반환하는 사용자 정보는 Map이기 때문에 값 하나하나 변환
     public static OAuthAttributes of(String registrationId, String userNameAttributeName, Map<String, Object> attributes) {
+
+        // kakao
+        if("kakao".equals(registrationId)){
+            return ofKakao("id", attributes);
+
+        // twitter
+        }else if("twitter".equals(registrationId)){
+            return ofTwiiter("id", attributes);
+        }
+
+        // google
         return ofGoogle(userNameAttributeName, attributes);
     }
+
 
     private static OAuthAttributes ofGoogle(String userNameAttributeName, Map<String, Object> attributes) {
         return OAuthAttributes.builder()
                 .name((String) attributes.get("name"))
                 .email((String) attributes.get("email"))
-                .picture((String) attributes.get("picture"))
+                .attributes(attributes)
+                .nameAttributeKey(userNameAttributeName)
+                .build();
+    }
+
+    private static OAuthAttributes ofKakao(String userNameAttributeName, Map<String, Object> attributes){
+
+        Map<String,Object> response = (Map<String, Object>)attributes.get("account_email");
+        Map<String,Object> profile = (Map<String, Object>) response.get("profile_image");
+        return OAuthAttributes.builder()
+                .email((String)response.get("email"))
+                .picture((String)profile.get("profile_image_url"))
+                .attributes(attributes)
+                .nameAttributeKey(userNameAttributeName)
+                .build();
+
+    }
+
+    private static OAuthAttributes ofTwiiter(String userNameAttributeName, Map<String, Object> attributes){
+
+        return OAuthAttributes.builder()
+                .email((String) attributes.get("email"))
+                .picture((String) attributes.get("profile"))
                 .attributes(attributes)
                 .nameAttributeKey(userNameAttributeName)
                 .build();
@@ -47,8 +83,11 @@ public class OAuthAttributes {
         return User.builder()
                 .name(name)
                 .email(email)
-                .picture(picture)
                 .role(Role.GUEST) //가입기본권한 == GUEST
                 .build();
     }
+
+
+
+
 }
