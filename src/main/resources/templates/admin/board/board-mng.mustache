@@ -1,0 +1,67 @@
+{{>layout/admin/admin_header}}
+<link rel="stylesheet" href="/css/admin/board-mng.css">
+<div class="background container-fluid">
+
+    <h4>게시판 관리</h4>
+
+    <div class="container">
+        <div>게시글</div>
+        <div>
+            <ul>
+                <li class="board" id="board-hd">번호</li>
+                <li class="board" id="board-hd">글번호</li>
+                <li class="board" id="board-hd">분류(교환/판매)</li>
+                <li class="board" id="board-hd">제목</li>
+                <li class="board" id="board-hd">작성자</li>
+                <li class="board" id="board-hd">댓글</li>
+                <li class="board" id="board-hd">등록일</li>
+                <li class="board" id="board-hd">수정일</li>
+                <li class="board" id="board-hd">삭제처리</li>
+
+                <li class="board" id="board-li">1</li>
+                <li class="board" id="board-li">3</li>
+                <li class="board" id="board-li">교환</li>
+                <li class="board" id="board-li"><a href="">[교환합니다] 나 뫄뫄 -> 님 와와</a></li>
+                <li class="board" id="board-li"><a href="">mwamwa@gmail.com</a></li>
+                <li class="board" id="board-li">0</li>
+                <li class="board" id="board-li">2022.02.16</li>
+                <li class="board" id="board-li">2022.02.16</li>
+                <li class="board" id="board-li">
+                    <button type="button" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </li>
+            </ul>
+            <!--페이징 추가-->
+        </div>
+        <div>댓글</div>
+        <div>
+            <ul>
+                <li class="comments" id=comments-hd">번호</li>
+                <li class="comments" id=comments-hd">댓글번호</li>
+                <li class="comments" id=comments-hd">댓글</li>
+                <li class="comments" id=comments-hd">작성자</li>
+                <li class="comments" id=comments-hd">등록일</li>
+                <li class="comments" id=comments-hd">수정일</li>
+                <li class="comments" id=comments-hd">삭제처리</li>
+
+                <li class="comments" id=comments-li">1</li>
+                <li class="comments" id=comments-li">12</li>
+                <li class="comments" id=comments-li"><a href=""> 혹시 교환하셨나요? </a></li>
+                <li class="comments" id=comments-li"><a href="">lwalwa@naver.com</a></li>
+                <li class="comments" id=comments-li">2022.02.16</li>
+                <li class="comments" id=comments-li">2022.02.16</li>
+                <li class="comments" id=comments-li">
+                    <button type="button" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </li>
+            </ul>
+            <!--페이징 추가-->
+        </div>
+
+    </div>
+
+</div>
+
+{{>layout/footer}}

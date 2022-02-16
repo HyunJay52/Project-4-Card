@@ -63,7 +63,7 @@
 	text-align:center;
 	}
 .board li:nth-child(8n+3){width:10%; text-align:left;}
-.board li:nth-child(7n+2) a{color:black; }
+.board li:nth-child(8n+3) a{color:black; }
 
 /*comments*/
 .comments{margin-top:10px;}

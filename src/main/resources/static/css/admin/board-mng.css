@@ -1,0 +1,21 @@
+/*board*/
+.board{margin-top:10px;}
+.board li{
+	width:7%; height:30px; line-height:30px; border-bottom:1px solid lightgray; float: left;
+	text-align:center;
+	}
+.board li
+.board li:nth-child(9n+4){width:10%; text-align:left;}
+.board li:nth-child(9n+5){width:10%; text-align:left;}
+.board li:nth-child(9n+4) a{color:black;}
+
+/*comments*/
+.comments{margin-top:10px;}
+.comments li{
+	width:7%; height:30px; line-height:30px; border-bottom:1px solid lightgray; float: left;
+	text-align:center;
+	}
+.comments li
+.comments li:nth-child(9n+4){width:10%; text-align:left;}
+.comments li:nth-child(9n+5){width:10%; text-align:left;}
+.comments li:nth-child(9n+4) a{color:black;}
