@@ -1,4 +1,4 @@
-
+.container{margin-bottom:20px;}
 .background{margin-top:30px;}
 /*detail setting*/
 .search {
@@ -21,7 +21,6 @@
 }
 /*table setting*/
 .table{
-    font-size:0.98px;
     margin:0 auto;
     padding:0;
 }
@@ -46,3 +45,36 @@
     border-top:1px solid gray;
     min-height:100px;
 }
+.inbox ul{
+    list-style: none;
+}
+.inbox ul>li{
+    float:left;
+    padding:10px;
+}
+.inbox ul>li a { font-size:xx-small;
+             color:black;}
+
+/*board/ comments/ inquiry  li setting */
+/*board*/
+.board{margin-top:10px;}
+.board li{
+	width:5%; height:30px; line-height:30px; border-bottom:1px solid lightgray; float: left;
+	text-align:center;
+	}
+.board li:nth-child(8n+3){width:10%; text-align:left;}
+.board li:nth-child(7n+2) a{color:black; }
+
+/*comments*/
+.comments{margin-top:10px;}
+.comments li{
+	width:10%; height:30px; line-height:30px; border-bottom:1px solid lightgray; float: left;
+	text-align:center;
+	}
+
+/*inquiry*/
+.inquiry{margin-top:10px;}
+.inquiry li{
+	width:5%; height:30px; line-height:30px; border-bottom:1px solid lightgray; float: left;
+	text-align:center;
+	}
