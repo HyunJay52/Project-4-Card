@@ -31,8 +31,8 @@ public class OAuthAttributes {
     //of() - OAuth2User에서 반환하는 사용자 정보는 Map이기 때문에 값 하나하나 변환
     public static OAuthAttributes of(String registrationId, String userNameAttributeName, Map<String, Object> attributes) {
 
-        // naver
-        if("naver".equals(registrationId)){
+        // kakao
+        if("kakao".equals(registrationId)){
             return ofKakao("id", attributes);
 
         // twitter
@@ -55,20 +55,23 @@ public class OAuthAttributes {
     }
 
     private static OAuthAttributes ofKakao(String userNameAttributeName, Map<String, Object> attributes){
-        Map<String, Object> response = (Map<String, Object>)attributes.get("response");
 
+        Map<String,Object> response = (Map<String, Object>)attributes.get("account_email");
+        Map<String,Object> profile = (Map<String, Object>) response.get("profile_image");
         return OAuthAttributes.builder()
-                .name((String) attributes.get("name"))
-                .email((String) attributes.get("email"))
-                .attributes(response)
+                .email((String)response.get("email"))
+                .picture((String)profile.get("profile_image_url"))
+                .attributes(attributes)
                 .nameAttributeKey(userNameAttributeName)
                 .build();
+
     }
 
     private static OAuthAttributes ofTwiiter(String userNameAttributeName, Map<String, Object> attributes){
+
         return OAuthAttributes.builder()
-                .name((String) attributes.get("name"))
                 .email((String) attributes.get("email"))
+                .picture((String) attributes.get("profile"))
                 .attributes(attributes)
                 .nameAttributeKey(userNameAttributeName)
                 .build();
