@@ -1,0 +1,165 @@
+{{>layout/admin/admin_header}}
+<link rel="stylesheet" href="/css/admin/member-mng.css">
+<div class="background container-fluid">
+<!--선택한 회원의 상세 정보를 조회합니다. 조회항목 : 개인정보/ 게시글-->
+    <h3>회원 상세정보</h3>
+
+    <div class="container">
+
+        <br/>
+        <!-- 목록 출력 영역// -->
+        <!--회원정보-->
+        <h5>회원 정보</h5>
+        <div class="box rounded" alt="...">
+
+            <div class="table-responsive">
+                <table class="table table-responsive table-borderless table-hover ">
+                    <thead>
+                    <tr>
+                        <th scope="col" width="20%">번호</th>
+                        <th scope="col" width="20%">회원번호</th>
+                        <th scope="col"  colspan="2">이메일</th>
+                        <th scope="col" width="20%">이름</th>
+                        <th scope="col" width="20%">연락처</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td scope="row">1</td>
+                        <td>13</td>
+                        <td colspan="2">test@gmail.com</td>
+                        <td>테스트</td>
+                        <td>010-0000-0000</td>
+
+                    </tr>
+                    </tbody>
+                    <thead>
+                    <tr>
+
+                        <th scope="col" width="20%">상태</th>
+                        <th scope="col" width="20%">구분</th>
+                        <th scope="col" width="20%">프로필</th>
+                        <th scope="col" width="20%">가입일</th>
+                        <th scope="col" width="20%">수정일</th>
+                        <th scope="col" width="20%">게시글</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><span>Y</span></td>
+                        <td><span>Guest</span></td>
+                        <td><img src="" width="25"> img</td>
+                        <td><span>2022.02.10</span></td>
+                        <td><span>2022.02.10</span></td>
+                        <td><span>o</span></td>
+
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <!--//회원정보-->
+        <!--회원 게시글-->
+        <h5>게시글 (select?전체보기, 게시글, 문의하기</h5>
+        <div class="box rounded" alt="...">
+            <div>
+                <!--<span  class="inbox-title rounded-pill mb-2 bg-dark text-white">게시글</span>-->
+                <button type="button" class="inbox-title btn btn-secondary btn-sm" disabled>게시글</button>
+            </div>
+            <div  class="inbox">
+                <ul>
+                    <li class="board" id="board-hd">번호</li>
+                    <li class="board" id="board-hd">글번호</li>
+                    <li class="board" id="board-hd">분류(교환/판매)</li>
+                    <li class="board" id="board-hd">제목</li>
+                    <li class="board" id="board-hd">댓글</li>
+                    <li class="board" id="board-hd">등록일</li>
+                    <li class="board" id="board-hd">수정일</li>
+                    <li class="board" id="board-hd">삭제처리</li>
+
+                    <li class="board" id="board-li">1</li>
+                    <li class="board" id="board-li">3</li>
+                    <li class="board" id="board-li">교환</li>
+                    <li class="board" id="board-li"><a href="">[교환합니다] 나 뫄뫄 -> 님 와와</a></li>
+                    <li class="board" id="board-li">0</li>
+                    <li class="board" id="board-li">2022.02.16</li>
+                    <li class="board" id="board-li">2022.02.16</li>
+                    <li class="board" id="board-li">
+                        <button type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                 <!--<span  class="inbox-title rounded-pill mb-2 bg-dark text-white">댓글</span>-->
+                <button type="button" class="inbox-title btn btn-secondary btn-sm" disabled>댓글</button>
+            </div>
+            <div  class="inbox">
+                <ul>
+                    <li class="comments" id=comments-hd">번호</li>
+                    <li class="comments" id=comments-hd">댓글번호</li>
+                    <li class="comments" id=comments-hd">댓글</li>
+                    <li class="comments" id=comments-hd">등록일</li>
+                    <li class="comments" id=comments-hd">수정일</li>
+                    <li class="comments" id=comments-hd">삭제처리</li>
+
+                    <li class="comments" id=comments-li">1</li>
+                    <li class="comments" id=comments-li">12</li>
+                    <li class="comments" id=comments-li"><a href=""> 혹시 교환하셨나요? </a></li>
+                    <li class="comments" id=comments-li">2022.02.16</li>
+                    <li class="comments" id=comments-li">2022.02.</li>
+                    <li class="comments" id=comments-li">
+                        <button type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <!--<span  class="inbox-title rounded-pill mb-2 bg-dark text-white">문의내역</span>-->
+                <button type="button" class="inbox-title btn btn-secondary btn-sm" disabled>문의내역</button>
+            </div>
+            <div  class="inbox">
+                <ul>
+                    <li id="inquiry-hd">번호</li>
+                    <li id="inquiry-hd">문의번호</li>
+                    <li id="inquiry-hd">제목</li>
+                    <li id="inquiry-hd">등록일</li>
+                    <li id="inquiry-hd">수정일</li>
+                    <li id="inquiry-hd">삭제처리</li>
+                    <li id="inquiry-hd">답변여부</li>
+                    <li id="inquiry-hd">답변하기</li>
+
+                    <li id="inquiry-li">1</li>
+                    <li id="inquiry-li">1</li>
+                    <li id="inquiry-li">이거 어떻게 해요??</li>
+                    <li id="inquiry-li">2022.02.16</li>
+                    <li id="inquiry-li">2022.02.16</li>
+                    <li id="inquiry-li">
+                        <button type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </li>
+                    <li id="inquiry-li">N</li>
+                    <li id="inquiry-li">답변하기</li>
+                </ul>
+            </div>
+        </div>
+        <!--// 회원 게시글-->
+        <!--회원 문의 내역-->
+        <h5>채팅내역</h5>
+         <div class="box rounded" alt="...">
+
+        </div>
+        <!--//회원 문의내역-->
+    </div>
+        <!-- //목록 출력 영역 -->
+
+</div> <!-- source ends -->
+
+</div>
+
+{{>layout/footer}}

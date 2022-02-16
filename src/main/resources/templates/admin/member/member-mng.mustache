@@ -1,0 +1,68 @@
+{{>layout/admin/admin_header}}
+<link rel="stylesheet" href="/css/admin/member-mng.css">
+<div class="background container-fluid">
+
+    <h3>회원관리</h3>
+
+    <div class="col-md-12 container">
+
+        <br/>
+        <!-- 목록 출력 영역// -->
+        <div class="mb-2 d-flex justify-content-between align-items-center">
+            <div> <span>Filters <i class="fa fa-angle-down"></i></span> <i class="fa fa-ellipsis-h ms-3"></i> </div>
+            <div class="position-relative"> <span class="position-absolute search"><i class="fa fa-search"></i></span> <input class="form-control w-100" placeholder="Search by order#, name..."> </div>
+
+        </div>
+
+    <div class="table-responsive">
+        <table class="table table-borderless table-hover ">
+            <thead>
+            <tr>
+                <th scope="col" width="5%">
+                    <div class="checkbox">
+                        <input type="checkbox" class="custom-control-input form-check-input" name="memberchk" id="" >
+                    </div>
+                </th>
+                <th scope="col" width="5%">번호</th>
+                <th scope="col" width="15%">이메일</th>
+                <th scope="col" width="10%">이름</th>
+                <th scope="col" width="15%">연락처</th>
+                <th scope="col" width="10%">프로필</th>
+                <th scope="col" width="5%">상태</th>
+                <th scope="col" width="10%">가입일</th>
+                <th scope="col" width="10%">수정일</th>
+                <th scope="col" width="5%">게시글</th>
+                <th scope="col" class="text-end"  width="5%"> <span>구분</span></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td >
+                    <div class="checkbox">
+                        <input type="checkbox" class="custom-control-input form-check-input" name="memberchk" id="" checked>
+                    </div>
+                </td>
+                <td scope="row">1</td>
+                <td>test@gmail.com</td>
+                <td>테스트</td>
+                <td>010-0000-0000</td>
+
+                <td><img src="" width="25"> img</td>
+                <td><span>Y</span></td>
+                <td><span>2022.02.10</span></td>
+                <td><span>2022.02.10</span></td>
+                <td><span>o</span></td>
+                <td class="text-end" ><span>G</span></td>
+            </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+    <!-- //목록 출력 영역 -->
+
+</div> <!-- source ends -->
+
+</div>
+
+{{>layout/footer}}
